@@ -32,7 +32,7 @@ O frontend é construído em React utilizando TypeScript para garantir maior rob
 
    ## Utilização
 
-- Acesse a interface do backend através do navegador, normalmente disponível em "http://localhost:8000".
+- Acesse a interface do backend através do navegador, normalmente disponível em `http://localhost:8000`.
 - Utilize os endpoints da API REST disponíveis no backend para realizar operações CRUD na aplicação.
 
 ### Frontend (React)
