@@ -32,6 +32,11 @@ O frontend é construído em React utilizando TypeScript para garantir maior rob
 7. Execute as migrações do Django: `python manage.py migrate`.
 8. Inicie o servidor Django: `python manage.py runserver`.
 
+   ## Utilização
+
+- Acesse a interface do frontend através do navegador, normalmente disponível em `http://localhost:8000`.
+- Utilize os endpoints da API REST disponíveis no backend para realizar operações CRUD na aplicação.
+
 ### Frontend (React)
 
 1. Navegue até o diretório `frontend`.
@@ -42,16 +47,6 @@ O frontend é construído em React utilizando TypeScript para garantir maior rob
 
 - Acesse a interface do frontend através do navegador, normalmente disponível em `http://localhost:3000`.
 - Utilize os endpoints da API REST disponíveis no backend para realizar operações CRUD na aplicação.
-
-## Contribuindo
-
-Contribuições são bem-vindas! Se você deseja contribuir com este projeto, siga os passos:
-
-1. Faça um fork deste repositório.
-2. Crie uma branch para sua feature: `git checkout -b minha-feature`.
-3. Commit suas mudanças: `git commit -m 'Adiciona minha feature'`.
-4. Faça push para a branch: `git push origin minha-feature`.
-5. Envie um pull request.
 
 ## Licença
 
