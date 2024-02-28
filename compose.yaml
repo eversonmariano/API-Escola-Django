@@ -1,0 +1,26 @@
+version: '3.7'
+
+services:
+  back:
+    container_name: escola_back
+    hostname: escola_back
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "8000:8000"
+    expose:
+      - "8000"
+  
+  front:
+    container_name: escola_front
+    hostname: escola_front
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "80:80"
+    expose:
+      - "80"

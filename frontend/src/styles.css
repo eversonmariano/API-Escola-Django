@@ -1,0 +1,15 @@
+.data-grid .MuiDataGrid-columnHeaderTitle {
+    font-weight: bold !important;
+}
+
+.data-grid .MuiTablePagination-selectLabel {
+    font-weight: bold !important;
+}
+
+.data-grid .MuiInputBase-root {
+    font-weight: bold !important;
+}
+
+.data-grid .MuiTablePagination-displayedRows {
+    font-weight: bold !important;
+}
