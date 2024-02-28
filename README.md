@@ -27,14 +27,13 @@ O frontend é construído em React utilizando TypeScript para garantir maior rob
 2. Navegue até o diretório `backend`.
 3. Crie um ambiente virtual Python (recomendado).
 4. Ative o ambiente virtual.
-5. Instale as dependências do Python listadas no arquivo `requirements.txt`.
-6. Configure o banco de dados no arquivo `settings.py`.
-7. Execute as migrações do Django: `python manage.py migrate`.
-8. Inicie o servidor Django: `python manage.py runserver`.
+5. Configure o banco de dados no arquivo `settings.py`.
+6. Execute as migrações do Django: `python manage.py migrate`.
+7. Inicie o servidor Django: `python manage.py runserver`.
 
    ## Utilização
 
-- Acesse a interface do frontend através do navegador, normalmente disponível em `http://localhost:8000`.
+- Acesse a interface do backend através do navegador, normalmente disponível em `http://localhost:8000`.
 - Utilize os endpoints da API REST disponíveis no backend para realizar operações CRUD na aplicação.
 
 ### Frontend (React)
