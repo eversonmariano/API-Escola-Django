@@ -1,70 +1,58 @@
-API de Gerenciamento Escolar com Django e Django REST Framework
-Este projeto consiste em uma API de gerenciamento escolar desenvolvida com Python 3.10, Django e Django REST Framework para o backend, e TypeScript e React para o frontend. Posteriormente, a aplicação foi dockerizada para facilitar a implantação e o gerenciamento.
+# API School
 
-Funcionalidades
-A API oferece as seguintes funcionalidades:
+Este repositório contém uma aplicação web para uma escola, desenvolvida com um backend em Django/Django REST Framework (Python) e frontend em TypeScript e React.
 
-Cadastro de Alunos e Cursos:
-Os campos do modelo de dados incluem informações como nome, idade, curso, etc.
-Utilize os padrões REST para criar, atualizar, listar e excluir registros de alunos e cursos.
-Interface Web:
-A interface web foi desenvolvida com React e TypeScript.
-Permite o cadastro, edição, exclusão e visualização dos dados de alunos e cursos por meio da API.
-Configuração do Projeto
-Backend (Django/Django REST Framework)
-Instale o Django REST Framework:
-pip install djangorestframework
+## Descrição
 
-Crie um novo projeto Django:
-django-admin startproject escola_api
+A API School é uma aplicação destinada a gerenciar informações relacionadas a uma escola, incluindo alunos, professores, disciplinas, notas, entre outros. A API oferece endpoints para realizar operações CRUD (Create, Read, Update, Delete) em diferentes entidades do sistema.
 
-Crie um aplicativo dentro do projeto:
-cd escola_api
-python manage.py startapp alunos
+O frontend é construído em React utilizando TypeScript para garantir maior robustez e segurança durante o desenvolvimento.
 
-Defina os modelos de dados no aplicativo alunos e configure as URLs e views.
-Execute as migrações:
-python manage.py makemigrations
-python manage.py migrate
+## Tecnologias Utilizadas
 
-Crie os serializers e viewsets para a API.
-Configure as rotas usando routers.
-Frontend (React/TypeScript)
-Crie um novo projeto React:
-npx create-react-app escola-frontend
+- Backend:
+  - Django
+  - Django REST Framework
+  - Python
+  
+- Frontend:
+  - React
+  - TypeScript
 
-Acesse o diretório do projeto:
-cd escola-frontend
+## Instalação e Configuração
 
-Implemente as telas de cadastro, edição, exclusão e visualização de alunos e cursos.
-Consuma a API criada no backend para realizar as operações.
-Dockerização
-Crie um arquivo Dockerfile na raiz do projeto:
-# Dockerfile para o backend Django
-FROM python:3.10
+### Backend (Django/Django REST Framework)
 
-WORKDIR /app
+1. Clone este repositório.
+2. Navegue até o diretório `backend`.
+3. Crie um ambiente virtual Python (recomendado).
+4. Ative o ambiente virtual.
+5. Instale as dependências do Python listadas no arquivo `requirements.txt`.
+6. Configure o banco de dados no arquivo `settings.py`.
+7. Execute as migrações do Django: `python manage.py migrate`.
+8. Inicie o servidor Django: `python manage.py runserver`.
 
-COPY requirements.txt .
+### Frontend (React)
 
-RUN pip install -r requirements.txt
+1. Navegue até o diretório `frontend`.
+2. Instale as dependências do Node.js utilizando npm ou yarn: `npm install` ou `yarn install`.
+3. Inicie o servidor de desenvolvimento React: `npm start` ou `yarn start`.
 
-COPY . .
+## Utilização
 
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+- Acesse a interface do frontend através do navegador, normalmente disponível em `http://localhost:3000`.
+- Utilize os endpoints da API REST disponíveis no backend para realizar operações CRUD na aplicação.
 
-Crie um arquivo docker-compose.yml:
-version: '3'
-services:
-  backend:
-    build: .
-    ports:
-      - "8000:8000"
+## Contribuindo
 
-Execute o seguinte comando para iniciar os contêineres:
-docker-compose up
+Contribuições são bem-vindas! Se você deseja contribuir com este projeto, siga os passos:
 
-Executando o Projeto
-Acesse a interface web em http://localhost:3000.
-Utilize a API em http://localhost:8000.
-Lembre-se de adaptar essas instruções conforme suas necessidades específicas e os detalhes do seu projeto. 🚀
+1. Faça um fork deste repositório.
+2. Crie uma branch para sua feature: `git checkout -b minha-feature`.
+3. Commit suas mudanças: `git commit -m 'Adiciona minha feature'`.
+4. Faça push para a branch: `git push origin minha-feature`.
+5. Envie um pull request.
+
+## Licença
+
+Este projeto está licenciado sob a [MIT License](LICENSE).
