@@ -6,8 +6,6 @@ Este repositório contém uma aplicação web para uma escola, desenvolvida com 
 
 A API School é uma aplicação destinada a gerenciar informações relacionadas a uma escola, incluindo alunos, professores, disciplinas, notas, entre outros. A API oferece endpoints para realizar operações CRUD (Create, Read, Update, Delete) em diferentes entidades do sistema.
 
-O frontend é construído em React utilizando TypeScript para garantir maior robustez e segurança durante o desenvolvimento.
-
 ## Tecnologias Utilizadas
 
 - Backend:
